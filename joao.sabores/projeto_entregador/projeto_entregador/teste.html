@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorveteria Fontana</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#fff7f2;
+      color:#333;
+    }
+
+    header{
+      width:100%;
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1600');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero{
+      color:white;
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      font-weight:700;
+    }
+
+    .hero p{
+      font-size:20px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#ff7a59;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff5c35;
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      color:#ff5c35;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#777;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:35px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 15px 30px rgba(0,0,0,0.08);
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h3{
+      font-size:26px;
+      margin-bottom:10px;
+      color:#ff5c35;
+    }
+
+    .card-content p{
+      color:#666;
+      line-height:1.6;
+      margin-bottom:20px;
+    }
+
+    .price{
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:20px;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:25px;
+      object-fit:cover;
+    }
+
+    .about-text h2{
+      font-size:42px;
+      color:#ff5c35;
+      margin-bottom:25px;
+    }
+
+    .about-text p{
+      line-height:1.9;
+      color:#555;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+    }
+
+    footer h3{
+      font-size:30px;
+      margin-bottom:15px;
+    }
+
+    footer p{
+      color:#ccc;
+      margin:5px 0;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:50px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+      .section-title h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="hero">
+
+      <h1>Sorveteria Fontana</h1>
+
+      <p>
+        Sorvetes artesanais com sabores irresistíveis,
+        feitos com ingredientes selecionados e muito carinho.
+      </p>
+
+      <a href="#produtos" class="btn">
+        Ver Cardápio
+      </a>
+
+    </div>
+
+  </header>
+
+  <section id="produtos">
+
+    <div class="section-title">
+      <h2>Nossos Sabores</h2>
+      <p>Os favoritos da nossa sorveteria</p>
+    </div>
+
+    <div class="products">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=1200">
+
+        <div class="card-content">
+
+          <h3>Morango Cremoso</h3>
+
+          <p>
+            Feito com morangos frescos e textura super cremosa.
+          </p>
+
+          <div class="price">R$ 18,90</div>
+
+          <a href="#" class="btn">Pedir Agora</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=1200">
+
+        <div class="card-content">
+
+          <h3>Pistache Premium</h3>
+
+          <p>
+            Sabor sofisticado com pistache selecionado.
+          </p>
+
+          <div class="price">R$ 24,90</div>
+
+          <a href="#" class="btn">Pedir Agora</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=1200">
+
+        <div class="card-content">
+
+          <h3>Chocolate Belga</h3>
+
+          <p>
+            Cremoso, intenso e irresistível para amantes de chocolate.
+          </p>
+
+          <div class="price">R$ 22,90</div>
+
+          <a href="#" class="btn">Pedir Agora</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1514849302-984523450cf4?q=80&w=1200">
+
+      <div class="about-text">
+
+        <h2>Sobre a Fontana</h2>
+
+        <p>
+          Inspirada nas tradicionais gelaterias italianas,
+          a Sorveteria Fontana oferece experiências únicas em cada sabor.
+        </p>
+
+        <p>
+          Trabalhamos com ingredientes premium, receitas artesanais
+          e um ambiente acolhedor para você aproveitar os melhores momentos.
+        </p>
+
+        <a href="#" class="btn">
+          Conheça Mais
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <h3>Sorveteria Fontana</h3>
+
+    <p>📍 Rio de Janeiro - RJ</p>
+
+    <p>📲 Instagram: @sorveteriafontana</p>
+
+    <p>🍦 Feito com carinho e muito sabor</p>
+
+  </footer>
+
+</body>
+</html>   
